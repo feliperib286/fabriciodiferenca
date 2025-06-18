@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Explicação Matemática</title>
+</head>
+<body>
+  <h1>Conceito Matemático: Detecção de Diferenças em Imagens</h1>
+  <p>
+    O objetivo é detectar onde uma imagem foi alterada em relação à original.
+  </p>
+  <h2>📐 Fórmula:</h2>
+  <pre>
+    diff(x, y) = |R1 - R2| + |G1 - G2| + |B1 - B2|
+    Se diff(x, y) > limiar → existe uma diferença significativa nesse pixel
+  </pre>
+  <p>
+    Cada pixel da imagem original é comparado com o correspondente na imagem modificada.
+    Se a soma das diferenças dos canais de cor (vermelho, verde, azul) for maior que um
+    valor pré-definido (limiar), consideramos aquele ponto como uma "mudança".
+  </p>
+  <h2>🧠 Aplicação</h2>
+  <ul>
+    <li>Comparação é feita pixel a pixel.</li>
+    <li>Coordenadas com diferenças são registradas.</li>
+    <li>Imagem gerada destaca esses pontos em vermelho.</li>
+  </ul>
+  <p><a href="/">🔙 Voltar</a></p>
+</body>
+</html>

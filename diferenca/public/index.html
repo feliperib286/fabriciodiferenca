@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detector de Diferenças (Manual)</title>
+</head>
+<body>
+  <h1>Enviar Imagens</h1>
+  <form action="/comparar" method="POST" enctype="multipart/form-data">
+    <label>Imagem original:</label>
+    <input type="file" name="imagem1" required /><br /><br />
+    <label>Imagem com peça faltando:</label>
+    <input type="file" name="imagem2" required /><br /><br />
+    <button type="submit">Comparar</button>
+  </form>
+
+  <hr />
+  <h2>Resultado:</h2>
+  <img src="/output/diferenca.png?cachebust=1" width="500"/>
+  <div id="coords">
+    <!-- Coordenadas serão exibidas aqui -->
+  </div>
+  <hr />
+  <a href="/explicacao.html">📘 Ver Explicação Matemática</a>
+</body>
+</html>
